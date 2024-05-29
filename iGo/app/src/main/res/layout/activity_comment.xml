@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    tools:context=".CommentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đánh giá của bạn"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceLarge"/>
+    <RatingBar
+        android:id="@+id/rb_ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rating="0"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:progressTint="@color/green"
+        style="@style/Widget.AppCompat.RatingBar"/>
+    <TextView
+        android:id="@+id/tv_rateCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiêu đề:"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/edt_tieudecmt"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nội dung:"
+        android:textColor="@color/black"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/edt_noidungcmt"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <Button
+        android:id="@+id/btn_danhgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/custom_button"
+        app:backgroundTint = "@null"
+        android:textColor="@color/black"
+        android:text="Đánh giá"/>
+    <TextView
+        android:id="@+id/tv_showRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginTop="10dp"/>
+
+
+
+</LinearLayout>

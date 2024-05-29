@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/baseline_question_mark_24"
+        android:layout_gravity="center_horizontal"/>
+<!--         />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Về Chúng Tôi"
+        android:backgroundTint="@color/blue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+<!--    android:textColor="@color/blue"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Chúng tôi là một nhóm gồm các nhà phát triển đam mê, những người cố gắng tạo ra các ứng dụng di động chất lượng cao để giải quyết các vấn đề trong thế giới thực. Mục tiêu của chúng tôi là cung cấp trải nghiệm người dùng tốt nhất có thể và chúng tôi đạt được điều này bằng cách lắng nghe phản hồi từ người dùng và liên tục cải tiến sản phẩm của mình"
+        android:backgroundTint="@color/blue"
+        android:textSize="18sp" />
+<!--    android:textColor="@color/blue"-->
+</LinearLayout>

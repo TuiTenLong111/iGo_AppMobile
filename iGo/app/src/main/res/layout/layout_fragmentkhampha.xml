@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F0FFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <ViewFlipper
+                    android:id="@+id/viewflipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@color/black">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hinhnendulich"
+                        android:scaleType="centerCrop"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dulich1"
+                        android:scaleType="centerCrop"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dulich2"
+                        android:scaleType="centerCrop"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dulich3"
+                        android:scaleType="centerCrop"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dulich4"
+                        android:scaleType="centerCrop"/>
+                </ViewFlipper>
+
+                <!--                danh mục-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:id="@+id/view_danhmuc"
+                        android:layout_width="4dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:background="#3300FF" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/view_danhmuc"
+                        android:layout_marginLeft="10dp"
+                        android:text="DANH MỤC"
+                        android:textColor="#3300FF"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_weight="3"/>
+                    <TextView
+                        android:id="@+id/tvtatca"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Tất cả"
+                        android:textStyle="italic"
+                        android:textColor="#3300FF"
+                        android:textSize="15dp"
+                        android:layout_marginRight="10sp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnNH"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Nhà hàng"
+                            android:textColor="@color/white"
+                            android:background="@drawable/custom_bottom_nhahang"/>
+
+                        <Button
+                            android:id="@+id/btnCF"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:text="Coffe"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/custom_bottom_nhahang"/>
+
+                        <Button
+                            android:id="@+id/btnKS"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:text="Khách sạn"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/custom_bottom_nhahang"/>
+
+                        <Button
+                            android:id="@+id/btnDD"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp"
+                            android:text="Địa điểm"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/custom_bottom_nhahang"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <!-- Thịnh hành-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp">
+                    <View
+                        android:id="@+id/viewthinhhanh"
+                        android:layout_width="4dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:background="#3300FF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/viewthinhhanh"
+                        android:layout_marginLeft="10dp"
+                        android:text="THỊNH HÀNH"
+                        android:textColor="#3300FF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/rev_thinhhanh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <!--NHÀ HÀNG-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp">
+                    <View
+                        android:id="@+id/viewnhahang"
+                        android:layout_width="4dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:background="#3300FF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/viewnhahang"
+                        android:layout_marginLeft="10dp"
+                        android:text="NHÀ HÀNG"
+                        android:textColor="#3300FF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/rev_nhahang"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <!--KHÁCH SẠN-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp">
+                    <View
+                        android:id="@+id/viewkhachsan"
+                        android:layout_width="4dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:background="#3300FF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/viewkhachsan"
+                        android:layout_marginLeft="10dp"
+                        android:text="KHÁCH SẠN"
+                        android:textColor="#3300FF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/rev_khachsan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp">
+                    <View
+                        android:id="@+id/viewcoffee"
+                        android:layout_width="4dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:background="#3300FF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/viewcoffee"
+                        android:layout_marginLeft="10dp"
+                        android:text="COFFEE"
+                        android:textColor="#3300FF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/rev_cf"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+                <!--ĐỊA ĐIỂM-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp">
+                    <View
+                        android:id="@+id/viewdaidiem"
+                        android:layout_width="4dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:background="#3300FF"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/viewdaidiem"
+                        android:layout_marginLeft="10dp"
+                        android:text="ĐỊA ĐIỂM"
+                        android:textColor="#3300FF"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/rev_dd"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

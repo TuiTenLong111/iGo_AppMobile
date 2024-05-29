@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/guide_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How to use this app"
+            android:textSize="24sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/guide_text"
+            android:textColor="@color/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to our app! Here's how to use it:\n\nStep 1: Open the app\n\nStep 2: Navigate to the main menu\n\nStep 3: Select the feature you want to use\n\nStep 4: Follow the on-screen instructions\n\nStep 5: Enjoy using our app!\n\nIf you have any questions or issues, please contact us at support@ourapp.com." />
+    </LinearLayout>
+</ScrollView>

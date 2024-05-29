@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name ="nameBanh">
+        <item>Burger</item>
+        <item>Pizza</item>
+        <item>Phap</item>
+        <item>Donut</item>
+        <item>Mumbai</item>
+    </string-array>
+    <string-array name ="motaBanh">
+        <item>Cay</item>
+        <item>ko cay</item>
+        <item>cay</item>
+        <item>cay</item>
+        <item>cay</item>
+    </string-array>
+    <string-array name ="giaBanh">
+        <item>200000</item>
+        <item>300000</item>
+        <item>2332</item>
+        <item>1</item>
+        <item>309900</item>
+    </string-array>
+</resources>

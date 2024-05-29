@@ -1,0 +1,30 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/policy_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chính sách"
+            android:textSize="30dp"
+            android:textColor="@color/blue"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/policy_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ex augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi quis justo nisi. Donec vulputate sapien eget erat tincidunt, quis rutrum ipsum aliquam. Fusce at nunc massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed vulputate dui eu quam ullamcorper, a lacinia justo pellentesque. Donec tristique, magna in malesuada efficitur, justo velit maximus urna, sed congue libero nisi eget massa." />
+
+    </LinearLayout>
+
+</ScrollView>

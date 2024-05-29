@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">iGo</string>
+    <string name="action_khampha">Khám phá</string>
+    <string name="action_timkiem">Tìm kiếm</string>
+    <string name="action_kehoach">Kế hoạch</string>
+    <string name="action_taikhoan">Tài khoản</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragment_nhahang">Fragmanet Nhà Hàng</string>
+    <string name="fragment_khachsan">Fragmanet khách sạn</string>
+    <string name="fragment_coffee">Fragmanet coffee</string>
+    <string name="fragment_diadiem">Fragmanet địa điểm </string>
+    <string name="fragment_giaitri">Fragmanet giải trí</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="ten_khach_san_1">The Song Luxury Apartment</string>
+    <string name="gioi_thieu_detail_1">Tọa lạc tại thành phố Vũng Tàu, The Sóng Luxury Apartment, Căn hộ The Sóng Vũng Tàu và Havilla Homestay cung cấp chỗ nghỉ với WiFi miễn phí và có hồ bơi, khu vườn, sân hiên cũng như tầm nhìn ra quang cảnh thành phố. Chỗ nghỉ này bố trí chỗ đỗ xe riêng ngay trong khuôn viên. Các căn tại đây có tầm nhìn ra khu vườn, máy giặt, khu vực bếp ăn đầy đủ tiện nghi với tủ lạnh cũng như phòng tắm riêng đi kèm đồ vệ sinh cá nhân miễn phí và máy sấy tóc. Các căn còn được trang bị bếp nấu ăn và ấm đun nước. Chỗ nghỉ nằm cách Bãi Sau 800 m trong khi Khu du lịch sinh thái và văn hóa Hồ Mây cách đó 3,8 km. Sân bay gần nhất là sân bay Vũng Tàu, nằm trong bán kính 3 km từ The Sóng Luxury Apartment, Căn hộ The Sóng Vũng Tàu và Havilla Homestay.</string>
+    <string name="vi_tri_1">28 Đường Thi Sách phường thắng Tam, Thành Phố Vũng Tàu , Việt Nam, Thắng Tam, Vung Tau, Việt Nam</string>
+</resources>

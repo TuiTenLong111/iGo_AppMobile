@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IGo"
+        tools:targetApi="31">
+
+<!--        ca nhan-->
+        <activity
+            android:name="Canhan.activity_personal_info"
+            android:exported="true" />
+        <activity
+            android:name="Canhan.Chinhsach"
+            android:exported="true" />
+        <activity
+            android:name="Canhan.DangXuat"
+            android:exported="true" />
+        <activity
+            android:name="Canhan.Doimatkhau"
+            android:exported="true" />
+        <activity
+            android:name="Canhan.HDSD"
+            android:exported="true" />
+        <activity
+            android:name="Canhan.VeChungToi"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name="Activity.TimKiemActivity"
+            android:exported="true" />
+        <activity
+            android:name="Activity.Load_Fragment_Item_Activity"
+            android:exported="true" />
+        <activity
+            android:name="Activity.TrangChu_Activity"
+            android:exported="true" />
+        <activity
+            android:name="Activity.DangKy_Activity"
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name="Activity.DangNhap_Activity"
+            android:exported="true"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".CommentActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name="Activity.Load_app_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

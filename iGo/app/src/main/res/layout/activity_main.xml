@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/test"/>
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/circle_indicator"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:ci_drawable="@color/green"
+
+            android:layout_height="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_NameItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16pt"
+            android:textStyle="bold"
+            android:text="@string/ten_khach_san_1"
+            android:textColor="@color/black"/>
+
+        <RatingBar
+            android:id="@+id/rb_ratingbar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4.7"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            android:progressTint="@color/green"
+            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+        <!--truy cap web, goi, contact, city-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_web"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Truy cập trang web"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="   "/>
+            <TextView
+                android:id="@+id/tv_sdt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Gọi"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="   "/>
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Email"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="   "/>
+            <TextView
+                android:id="@+id/tv_ThanhPho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Vũng Tàu "/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_GioiThieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+            android:layout_marginTop="10dp"
+            android:text="Giới thiệu"/>
+        <TextView
+            android:id="@+id/tv_Desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:text="@string/gioi_thieu_detail_1"/>
+        <!-- tag tag-->
+        <TextView
+            android:id="@+id/tv_NgoNgu"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Ngôn ngữ khả dụng"/>
+        <TextView
+            android:id="@+id/tv_NgoNgu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếng Việt, Tiếng Anh"/>
+
+        <TextView
+            android:id="@+id/tv_TienNghi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_3gach_24"
+            android:text="  Tiện nghi"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text=" Internet tốc độ miễn phí(WiFi) \n Bàn uống trà \n Có điều hoà \n Bữa sáng miễn phí \n View đẹp \n Không gian thoải mái"/>
+
+        </LinearLayout>
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_xemtiennghi"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/nut_tron_trong_suot"-->
+<!--            app:backgroundTint="@null"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:text="Xem tất cả tiện nghi"/>-->
+
+        <TextView
+            android:id="@+id/tv_Khuvuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+            android:text="Khu vực"/>
+        <TextView
+            android:id="@+id/tv_DiaChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/vi_tri_1"/>
+
+        <TextView
+            android:id="@+id/tv_Donggop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+            android:layout_marginTop="10dp"
+            android:text="Đóng góp"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btn_danhgia"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@drawable/nut_tron_trong_suot"
+                app:backgroundTint = "@null"
+                android:textColor="@color/black"
+                android:text="Viết đánh giá"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_DanhGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="10pt"
+            android:text="Đánh giá"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đánh giá chung:"/>
+            <RatingBar
+                android:id="@+id/rb_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rating="4.2"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                android:progressTint="@color/green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray">
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+        </ListView>
+
+
+
+<!--        <com.taufiqrahman.reviewratings.RatingReviews-->
+<!--            xmlns:bar="http://schemas.android.com/apk/res-auto"-->
+<!--            android:id="@+id/rating_reviews"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="42dp"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.499"-->
+<!--            bar:animation="true"-->
+<!--            bar:max_value="100"-->
+<!--            bar:show_label="true"-->
+<!--            bar:spaces="0dp"-->
+<!--            bar:text_color="#333333"-->
+<!--            bar:text_size="10sp"-->
+<!--            bar:width="15dp" />-->
+
+        <ImageView
+            android:id="@+id/img_view"
+            android:layout_width="500dp"
+            android:layout_height="500dp"/>
+        <TextView
+            android:id="@+id/tv_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</ScrollView>
